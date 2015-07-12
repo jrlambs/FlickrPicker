@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
+  <Identity Name="646ac490-adeb-485d-bb0e-a34da63d5b3a" Publisher="CN=Jeff" Version="1.0.0.1" />
+  <Properties>
+    <DisplayName>Flicker Picker</DisplayName>
+    <PublisherDisplayName>jrlambs</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.3.0</OSMinVersion>
+    <OSMaxVersionTested>6.3.0</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Flickr2.App">
+      <m2:VisualElements DisplayName="Flickr Picker" Square150x150Logo="Assets\Logo.png" Square30x30Logo="Assets\FavPickr30x30.png" Description="An app designed to help you select the best of your own photos from your personal Flickr library by applying a tag to the photos you select." ForegroundText="dark" BackgroundColor="#FFFFFF" ToastCapable="false">
+        <m2:DefaultTile DefaultSize="square150x150Logo" Square70x70Logo="Assets\Square70x70Logo.png" ShortName="Flicker Picker" Wide310x150Logo="Assets\Wide310x150Logo.png" Square310x310Logo="Assets\Square310x310Logo.png">
+        </m2:DefaultTile>
+        <m2:SplashScreen Image="Assets\SplashScreen.png" />
+        <m2:InitialRotationPreference>
+          <m2:Rotation Preference="portrait" />
+          <m2:Rotation Preference="landscape" />
+          <m2:Rotation Preference="portraitFlipped" />
+          <m2:Rotation Preference="landscapeFlipped" />
+        </m2:InitialRotationPreference>
+        <m2:ApplicationView MinWidth="width500" />
+      </m2:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>

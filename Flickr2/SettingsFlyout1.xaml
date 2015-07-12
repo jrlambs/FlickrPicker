@@ -1,0 +1,34 @@
+﻿<SettingsFlyout
+    x:Class="Flickr2.SettingsFlyout1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Flickr2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    IconSource="Assets/SmallLogo.png"
+    Title="Tag Settings"
+    d:DesignWidth="346">
+
+    <!-- This StackPanel acts as a root panel for vertical layout of the content sections -->
+    <StackPanel VerticalAlignment="Top" HorizontalAlignment="Left" Width="282" Height="353" >
+
+        <!-- The StackPanel(s) below define individual content sections -->
+
+        <!-- Content Section 1-->
+        <StackPanel Style="{StaticResource SettingsFlyoutSectionStyle}">
+
+            <!-- Section 1 header -->
+
+            <!-- Section 1 body -->
+
+        </StackPanel>
+        <TextBlock x:Name="textBlock" Height="30" TextWrapping="Wrap" Style="{StaticResource CaptionTextBlockStyle}" FontFamily="Global User Interface" Margin="10,0,124,0" VerticalAlignment="Top" Text="&quot;Favorite&quot; Tag" FontWeight="Bold" FontSize="18.667"/>
+        <TextBox x:Name="tagTextBox" TextWrapping="Wrap" Text="TextBox" Margin="0,0,109,0" FontFamily="Global User Interface"/>
+        <TextBlock x:Name="textBlock2" Height="30" TextWrapping="Wrap" Style="{StaticResource CaptionTextBlockStyle}" FontFamily="Global User Interface" Margin="10,0,67,0" VerticalAlignment="Top" Text="Default Search Param" FontWeight="Bold" FontSize="18.667"/>
+        <TextBox x:Name="searchParamTextBox" TextWrapping="Wrap" Text="TextBox" Margin="0,0,109,0" FontFamily="Global User Interface"/>
+
+        <!-- Define more Content Sections below as necessary -->
+
+    </StackPanel>
+</SettingsFlyout>

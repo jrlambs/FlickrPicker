@@ -1,0 +1,50 @@
+﻿<Page
+    x:Class="Flickr2.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Flickr2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:WinRTXamlToolkit.Controls"
+    xmlns:data="using:WinRTXamlToolkit.Controls.Data"
+    NavigationCacheMode="Enabled"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <!-- Grid-appropriate 250 pixel square item template as seen in the GroupedItemsPage and ItemsPage -->
+        <DataTemplate x:Key="DataTemplate1">
+            <Grid HorizontalAlignment="Left" Width="250" Height="250">
+                <Border Background="{StaticResource ListViewItemPlaceholderBackgroundThemeBrush}">
+                    <Image Source="{Binding ImageUrl}" Stretch="UniformToFill" Tapped="favImgTag_Tapped" AutomationProperties.Name="{Binding Title}"/>
+                </Border>
+                <StackPanel VerticalAlignment="Bottom" HorizontalAlignment="Right">
+                    <Button BorderThickness="0" Click="favButton_Click">
+                        <Image Source="{Binding tagImage}" Width="30" Height="30"/>
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </DataTemplate>
+        <DataTemplate x:Key="listItemTemplate1">
+            
+            <TextBlock Text="{Binding title}" RequestedTheme="Dark" IsRightTapEnabled="False" IsHoldingEnabled="False" IsDoubleTapEnabled="False" SelectionChanged="TextBlock_SelectionChanged" Margin="0,0,4,0"/>
+        </DataTemplate>
+
+
+    </Page.Resources>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300*"/>
+            <ColumnDefinition Width="1151*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="textBlock" TextWrapping="Wrap" Style="{StaticResource HeaderTextBlockStyle}" Margin="100,0,-100,30" VerticalAlignment="Bottom" FontFamily="Global User Interface" Grid.ColumnSpan="2" Grid.RowSpan="2" SelectionChanged="textBlock_SelectionChanged_1" Text="Flickr Picker&#xD;&#xA;"/>
+        <ListView Name="dateList" Grid.Column="0" Grid.Row="2" RequestedTheme="Dark" SelectionChanged="dateList_SelectionChanged" Background="#FF1D1D1D" ItemTemplate="{StaticResource listItemTemplate1}" Margin="20,0,0,0"/>
+
+        <GridView x:Name="gridView" ItemTemplate="{StaticResource DataTemplate1}" ItemsSource="{Binding}" Grid.Row="2" ScrollViewer.HorizontalScrollBarVisibility="Auto" ItemClick="OnGridItemClick" Grid.Column="1" IsItemClickEnabled="True"/>
+
+    </Grid>
+</Page>
