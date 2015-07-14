@@ -1,0 +1,13 @@
+Flickr Picker Privacy Policy.
+
+The app collectes 2 types of data:
+
+1) Settings:  This includes your default search term as well as the tag you use for tagging your images in the app.
+
+2) Authentification Info:  This app stores authentifcation keys which allow this app to communicate with your Flickr account once you have provided access.  At any point you can revoke this app's permissions from your Flickr account settings on the Flickr website and/or remove the stored authentification information by selecting "Log Out" from the application settings.
+
+
+All settings listed above are stored in the user's personal storage space on their own device and/or in their "Roaming Data" profile which is stored on Microsoft's servers so it can be transfered between devices.
+
+
+This app does not collect/share/store/send any information about you or your photos with anyone.  
