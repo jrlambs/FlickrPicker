@@ -184,10 +184,10 @@ namespace Flickr2
         }
 
         
-        /*
+        
         private async void navTextTapped(object sender, TappedRoutedEventArgs e)
         {
-            var app = App.Current as App;
+         /*   var app = App.Current as App;
             int photosAtaTime = 100;
             int pageNum = 1;
             DateNavigationItem item = (DateNavigationItem)dateList.SelectedItem;
@@ -199,8 +199,8 @@ namespace Flickr2
             photosToShow.searchParam = app.searchParamString;
 
             this.DataContext = photosToShow;
-
-        }*/
+            */
+        }
 
         private void OnGridItemClick(object sender, ItemClickEventArgs e)
         {

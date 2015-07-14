@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
-  <Identity Name="646ac490-adeb-485d-bb0e-a34da63d5b3a" Publisher="CN=Jeff" Version="1.0.0.1" />
+  <Identity Name="1441jrlambs.FlickrPicker" Publisher="CN=710798AA-C311-4DFD-BCAB-0B7626379BE7" Version="1.1.0.1" />
   <Properties>
-    <DisplayName>Flicker Picker</DisplayName>
+    <DisplayName>Flickr Picker</DisplayName>
     <PublisherDisplayName>jrlambs</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>

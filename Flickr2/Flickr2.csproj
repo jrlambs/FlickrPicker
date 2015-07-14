@@ -14,9 +14,10 @@
     <MinimumVisualStudioVersion>12</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <PackageCertificateKeyFile>Flickr2_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateKeyFile>Flickr2_StoreKey.pfx</PackageCertificateKeyFile>
     <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
     <AppxBundlePlatforms>neutral</AppxBundlePlatforms>
+    <PackageCertificateThumbprint>F6B0EDB10D3F6364AD1E86AD04C3EA06DC979DFA</PackageCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -126,6 +127,7 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <None Include="Flickr2_StoreKey.pfx" />
     <None Include="Flickr2_TemporaryKey.pfx" />
     <None Include="packages.config" />
   </ItemGroup>
@@ -162,6 +164,8 @@
     <Content Include="Assets\Wide310x150Logo.scale-140.png" />
     <Content Include="Assets\Wide310x150Logo.scale-180.png" />
     <Content Include="Assets\Wide310x150Logo.scale-80.png" />
+    <Content Include="Privacy Policy.txt" />
+    <None Include="Package.StoreAssociation.xml" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
